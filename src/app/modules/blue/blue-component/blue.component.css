@@ -3,10 +3,11 @@ a {
 }
 
 .wrapper {
+  height: 100%;
   background: blue;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 1fr 9fr 1fr;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 50px 1fr 50px;
 }
 
 .item1, .item2 {

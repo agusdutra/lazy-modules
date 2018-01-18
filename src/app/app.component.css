@@ -1,15 +1,19 @@
 
 .wrapper {
+  height: 100vh;
   background-color: whitesmoke;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
-  grid-row-gap: 10px;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas: "left navbar right" "left router right";
 }
 
-.item1, .item2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.navbar {
+  grid-area: navbar;
+}
+
+.router {
+  grid-area: router;
 }
 
 /deep/ .active {
