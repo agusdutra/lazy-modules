@@ -1,0 +1,15 @@
+a {
+  color: white;
+}
+
+.wrapper {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 9fr 1fr;
+}
+
+.item1, .item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
